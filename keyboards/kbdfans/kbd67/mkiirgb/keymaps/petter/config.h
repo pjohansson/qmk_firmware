@@ -17,3 +17,6 @@
 
 // Always send `Esc` from Grave/Esc when ctrl is pressed
 #define GRAVE_ESC_CTRL_OVERRIDE
+
+// Add unicode typing using WinCompose
+#define UNICODE_SELECTED_MODES UC_WINC

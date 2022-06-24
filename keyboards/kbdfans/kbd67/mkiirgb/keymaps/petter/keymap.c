@@ -1,4 +1,6 @@
 #include QMK_KEYBOARD_H
+#include "unicode.h"
+
 #define _LAYER0 0
 #define _LAYER1 1
 
@@ -12,7 +14,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         [_LAYER1] = LAYOUT_65_ansi_blocker( /* FN */
             KC_GESC,       KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,    KC_F11,   KC_F12,   KC_DEL,   _______,
             _______,       RGB_TOG,  RGB_MOD,  RGB_HUI,  RGB_HUD,  RGB_SAI,  RGB_SAD,  RGB_VAI,  RGB_VAD,  _______,  _______,   _______,  _______,  QK_BOOT,  KC_HOME,
-            CTL_T(KC_CAPS),RGB_SPI,  RGB_SPD,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,            EEP_RST,  KC_END,
+            CTL_T(KC_CAPS),RGB_SPI,  RGB_SPD,  _______,  _______,  _______,  _______,  _______,  _______,  UC(LOZ),  _______,   _______,            EEP_RST,  KC_END,
             KC_LSFT,       _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______,            KC_MPLY,  _______,
             _______,       _______,  _______,                  _______,                _______,            _______,  KC_MPRV,                       KC_MSTP,  KC_MNXT),
 };
